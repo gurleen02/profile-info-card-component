@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    /* GLOBALS */
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: inherit;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+
+    body {
+        font-size: 1.6rem;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+
+    li {
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    /* Container styles*/
+
+    .profile-card {
+        position: relative;
+        width: 350px;
+        padding: 5rem;
+        margin: 5rem;
+        color: white;
+        background-color: #082032;
+        border-radius: 8px;
+        box-shadow: 10px 7px 20px rgba(0, 0, 0, .7);
+        overflow: hidden;
+    }
+
+    /* Component Styles */
+
+    .card__profile-photo {
+        border-radius: 50%;
+        padding: 8px;
+        border: 2px solid #FF4C29;
+        box-shadow: 0px 0px 12px 5px #FF4C29;
+    }
+
+    .card__name {
+        margin-top: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    .card__details * {
+        display: inline-flex;
+        flex-wrap: wrap;
+        padding: 1em;
+        margin-top: 1.8rem;
+        margin-bottom: 1.8rem;
+        font-weight: 400;
+
+    }
+
+    .card__socials i {
+        margin: 0.5em;
+        margin-bottom: 1.8rem;
+        padding: 0.7rem;
+        border: 1px solid #334756;
+        border-radius: 50%;
+        height: 2em;
+        width: 2em;
+        text-align: center;
+        background: #334756;
+        color: #FF4C29;
+    }
+
+    .card__btn {
+        display: block;
+        margin: auto;
+        width: 150px;
+        padding: 0.8em 1.8em;
+        cursor: pointer;
+        color: #082032;
+        font-weight: 600;
+        border-radius: 4px;
+        border: 1px solid #FF4C29;
+        transition: color .3s ease-in-out;
+        transition-property: color, background-color;
+
+    }
+
+    .card__btn + .card__btn{
+  	margin-top: 1.8rem;
+  }
+
+  .card__message{
+      margin-top: 1.4rem;
+      background: #FF4C29;
+  }
+
+  .card__follow{
+      background: transparent;
+      color: #FF4C29;
+  }
+
+</style>
+
+<body>
+    <div class="profile-card">
+        <img class="card__profile-photo" src="https://picsum.photos/100/100" alt="">
+        <h3 class="card__name">Gurleen Kaur</h3>
+        <div class="card__details">
+            <h5 class="card__posts">400 Posts</h5>
+            <h5 class="card__likes">3568 likes</h5>
+        </div>
+        <div class="card__socials">
+            <li class="card__instagram"> <i class="fab fa-instagram" aria-hidden="true"></i></li>
+            <li class="card__twitter"> <i class="fab fa-twitter" aria-hidden="true"></i></li>
+            <li class="card__linkedin"> <i class="fab fa-linkedin-in" aria-hidden="true"></i></li>
+            <li class="card__github"> <i class="fab fa-github" aria-hidden="true"></i></li>
+        </div>
+        <button class="card__message card__btn">
+            Message
+        </button>
+        <button class="card__follow card__btn">
+            Following
+        </button>
+    </div>
+</body>
+
+</html>
